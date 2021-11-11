@@ -1,0 +1,8 @@
+<h1>Hey! Create your new 🐮vie list here</h1>
+
+<%= simple_form_for(@list) do |f| %>
+  <%= f.input :name, label: 'List name', error: '🐮 Make me happy and fill it in' %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Back to lists", lists_path %>

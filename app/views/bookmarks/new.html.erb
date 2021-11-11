@@ -1,0 +1,9 @@
+<h1>Yoo, select a 🐮vie to add to your <%= @list.name %> list</h1>
+
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.association :movie, label: 'Select movie', error: 'Please select a m🐮🐮vie ' %>
+  <%= f.input :comment, label: 'Add a comment'%>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Back to lists", lists_path %>
