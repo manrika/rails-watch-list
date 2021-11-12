@@ -54,3 +54,6 @@ gem "simple_form"
 
 #Fake data
 gem "faker"
+
+#Gem for security
+gem 'dotenv-rails', groups: [:development, :test]
