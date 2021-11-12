@@ -1,5 +1,9 @@
-<h1><%= @list.name %>'s movies list</h1>
+<h1><%= @list.name %>'s 🐮vies list</h1>
 
+<% if @list.photo.attached? %>
+  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+</div>
+<% end %>
 
 <ul>
   <% @movies.each do |movie| %>

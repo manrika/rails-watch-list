@@ -57,3 +57,6 @@ gem "faker"
 
 #Gem for security
 gem 'dotenv-rails', groups: [:development, :test]
+
+#Gem for cloudinary api
+gem 'cloudinary', '~> 1.16.0'

@@ -2,6 +2,7 @@
 
 <%= simple_form_for(@list) do |f| %>
   <%= f.input :name, label: 'List name', error: '🐮 Make me happy and fill it in' %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit %>
 <% end %>
 
